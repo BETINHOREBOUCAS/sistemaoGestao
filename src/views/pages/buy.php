@@ -2,8 +2,6 @@
 
 <div class="container">
     <section>
-
-
         <div class="section">
             <div class="line-product">
                 <div class="search">

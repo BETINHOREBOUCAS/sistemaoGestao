@@ -14,3 +14,5 @@ $router->get('/inventory/edit/{id}', 'InventoryController@edit');
 $router->get('/collaborator', 'CollaboratorController@index');
 
 $router->get('/feedstock', 'FeedstockController@index');
+
+$router->get('/report', 'ReportController@index');

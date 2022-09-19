@@ -1,6 +1,4 @@
 /## Páginas não criadas ##/
-    * Matéria Prima
-    * Relatórios
     * Configuração
 
 /## Itens faltante por páginas já criadas ##/
@@ -18,7 +16,7 @@
             * Editar coloborador
             * Excluir colaborador
 
-    // inventory JavaScript //
+    // buy JavaScript //
         ** MODAL fetch (AJAX)**
             * Atualizar quantidade no carrinho
             * Pesquisa 3 segundos mostrar resultado
@@ -28,4 +26,11 @@
             * Atualizar quantidade no estoque
             * Editar Produto
             * Pesquisa 3 segundos mostrar resultado
+
+    // feedstoc JavaScript //
+        ** MODAL fetch (AJAX)**
+            * Atualizar quantidade no estoque
+            * Pesquisa 3 segundos mostrar resultado
+            * add produto
+            * editar produto
         

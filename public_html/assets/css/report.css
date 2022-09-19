@@ -1,0 +1,51 @@
+.filter_report {
+    display: flex;
+    justify-content: center;
+}
+
+.filter_report .style-campo {
+    text-align: center;
+}
+
+.filter_report h4 {
+    text-align: center;
+}
+
+.filter_report input[type=date] {
+    width: 90%;
+    border-radius: 10px;
+    border: 1px solid rgb(228, 225, 225);
+    padding: 10px;
+}
+
+.filter_report select {
+    width: 97%;
+    border-radius: 10px;
+    border: 1px solid rgb(228, 225, 225);
+    padding: 10px;
+}
+
+.filter_report .type {
+    border: 1px solid rgb(228, 225, 225);
+    margin: 10px;
+    width: 100%;
+    padding: 10px;
+}
+
+.filter_report .filter {
+    border: 1px solid rgb(228, 225, 225);
+    margin: 10px;
+    width: 100%;
+    padding: 10px;
+}
+
+.filter_report .fields {
+    border: 1px solid rgb(228, 225, 225);
+    margin: 10px;
+    width: 100%;
+    padding: 10px;
+}
+
+.buttom-report .sub-product-buttom {
+    text-align: center;
+}

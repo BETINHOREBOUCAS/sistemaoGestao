@@ -18,7 +18,7 @@
                     <div><a href="<?=$base;?>/inventory"><i class="fa-solid fa-boxes-stacked" title="Estoques"></i></a></div>
                 
                 
-                    <div><a href=""><i class="fa-solid fa-file-invoice" title="Relatórios"></i></a></div>
+                    <div><a href="<?=$base;?>/report"><i class="fa-solid fa-file-invoice" title="Relatórios"></i></a></div>
                 
                 
                     <div><a href=""><i class="fa-solid fa-gear" title="Configuração"></i></a></div>

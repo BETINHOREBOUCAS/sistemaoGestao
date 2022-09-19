@@ -32,9 +32,9 @@
                             </table>
                         </div>
                     </div>
-                    <div class="title-product info">Rede Maria Bonita nº 4</div>
+                    <div class="title-product info">Fio Beatriz</div>
                     <div class="price-product info">R$ 154,00</div>
-                    <div class="inventory-product info">5 Unid.</div>
+                    <div class="inventory-product info">5 kg.</div>
                     <a href="<?= $base; ?>/inventory/edit/5">
                         <div class="edit" title="Editar Produto"><i class="fa-solid fa-pen-to-square"></i></div>
                     </a>
