@@ -1,6 +1,9 @@
 /## Páginas não criadas ##/
     ** Home PHP
         * Clientes
+            - Ajustar modal (javaScript)
+            - Animação ao abrir modal
+            - Adicionar conteudo do modal cadastrar cliente
         * Estoque Baixo
         * Carrinho
         * Fornecedores

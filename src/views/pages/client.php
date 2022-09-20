@@ -1,4 +1,4 @@
-<?= $render("header", ["title" => "Colaboradores"]); ?>
+<?php $render("header", ["title" => "Clientes"]); ?>
 
 <div class="container">
 
@@ -7,18 +7,15 @@
             <div class="search">
                 <input type="text" name="" id="" placeholder="Pesquisar colaborador">
             </div>
-            <div class="button_add">
-                <a href="#">
+            <div class="button_add">                
                     <div class="add-product" title="Adicionar Colaborador">
                         <i class="fa-solid fa-square-plus"></i>
-                    </div>
-                </a>
+                    </div>                
             </div>
             <table class="table-list">
                 <thead>
                     <tr>
                         <th>Nome</th>
-                        <th>Função</th>
                         <th>Endereço</th>
                         <th>Ações</th>
                     </tr>
@@ -27,7 +24,6 @@
                 <tbody>
                     <tr>
                         <td>Paulo</td>
-                        <td>Impunhador</td>
                         <td>Lagoa dos Porcos</td>
                         <td>
                             <div class="person-icons">
@@ -40,7 +36,6 @@
                     </tr>
                     <tr>
                         <td>Paulo</td>
-                        <td>Impunhador</td>
                         <td>Lagoa dos Porcos</td>
                         <td>
                             <div class="person-icons">

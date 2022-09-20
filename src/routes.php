@@ -4,6 +4,7 @@ use core\Router;
 $router = new Router();
 
 $router->get('/', 'HomeController@index');
+$router->get('/client', 'HomeController@client');
 
 $router->get('/buy', 'BuyController@index');
 

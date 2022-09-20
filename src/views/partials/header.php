@@ -18,13 +18,17 @@
     <link rel="stylesheet" href="<?= $base; ?>/assets/css/report.css">
     <link rel="stylesheet" href="<?= $base; ?>/assets/css/business.css">
     <link rel="stylesheet" href="<?= $base; ?>/assets/css/footer.css">
+    <link rel="stylesheet" href="<?= $base; ?>/assets/css/modal.css">
     <title>Gestor Maximum</title>
 </head>
 
 <body>
 
+    <?= $render("modal"); ?>
+
     <header>
         <div class="header">
+
             <div class="logo">
                 <div><img src="<?= $base; ?>/assets/img/system.png"></div>
                 <div>Gestor <br> Maximum</div>

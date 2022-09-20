@@ -29,6 +29,7 @@
 </footer>
 
 <script src="<?= $base; ?>/assets/js/script.js"></script>
+<script src="<?= $base; ?>/assets/js/modal.js"></script>
 </body>
 
 </html>

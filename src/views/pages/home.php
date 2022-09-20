@@ -4,11 +4,13 @@
 
     <div class="dash">
         <div class="dash-control" id="client">
-            <div class="dash-icons">
-                <div><i class="fa-solid fa-users"></i></div>
-                <div>500</div>
-            </div>
-            <div class="dash-text">Clientes</div>
+            <a href="<?=$base;?>/client">
+                <div class="dash-icons">
+                    <div><i class="fa-solid fa-users"></i></div>
+                    <div>500</div>
+                </div>
+                <div class="dash-text">Clientes</div>
+            </a>
         </div>
 
         <div class="dash-control" id="inventory">
