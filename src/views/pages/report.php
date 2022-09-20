@@ -79,9 +79,9 @@
     </div>
 
     <div class="buttom-report">
-    <div class="sub-product-buttom">
-        <input type="submit" value="Pesquisar" class="myButton">
-    </div>
+        <div class="sub-product-buttom">
+            <input type="submit" value="Pesquisar" class="myButton">
+        </div>
     </div>
 
     <div>

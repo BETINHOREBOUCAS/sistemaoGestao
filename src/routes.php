@@ -16,3 +16,5 @@ $router->get('/collaborator', 'CollaboratorController@index');
 $router->get('/feedstock', 'FeedstockController@index');
 
 $router->get('/report', 'ReportController@index');
+
+$router->get('/config', 'ConfigController@index');

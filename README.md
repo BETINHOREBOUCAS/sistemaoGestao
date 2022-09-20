@@ -1,5 +1,18 @@
 /## Páginas não criadas ##/
-    * Configuração
+    ** Home PHP
+        * Clientes
+        * Estoque Baixo
+        * Carrinho
+        * Fornecedores
+        * Pedidos
+        * Contas a pagar
+        * Contas a receber
+        * Pedidos a fornecedores
+
+    ** Heades PHP
+        * Notificação
+        * Carrinho (link para redirecionar)
+        * Perfil
 
 /## Itens faltante por páginas já criadas ##/
 

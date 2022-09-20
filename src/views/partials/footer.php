@@ -21,7 +21,7 @@
                     <div><a href="<?=$base;?>/report"><i class="fa-solid fa-file-invoice" title="Relatórios"></i></a></div>
                 
                 
-                    <div><a href=""><i class="fa-solid fa-gear" title="Configuração"></i></a></div>
+                    <div><a href="<?=$base;?>/config"><i class="fa-solid fa-gear" title="Configuração"></i></a></div>
                 
             </div>
         </nav>

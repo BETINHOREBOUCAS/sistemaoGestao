@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="<?= $base; ?>/assets/css/registration.css">
     <link rel="stylesheet" href="<?= $base; ?>/assets/css/person.css">
     <link rel="stylesheet" href="<?= $base; ?>/assets/css/report.css">
+    <link rel="stylesheet" href="<?= $base; ?>/assets/css/business.css">
     <link rel="stylesheet" href="<?= $base; ?>/assets/css/footer.css">
     <title>Gestor Maximum</title>
 </head>
