@@ -4,16 +4,10 @@
 
     <div>
         <div class="person-list">
-            <div class="search">
-                <input type="text" name="" id="" placeholder="Pesquisar colaborador">
-            </div>
-            <div class="button_add">
-                <a href="#">
-                    <div class="add-product" title="Adicionar Colaborador">
-                        <i class="fa-solid fa-square-plus"></i>
-                    </div>
-                </a>
-            </div>
+
+            <?= $render("search"); ?>
+            <?= $render("buttonAdd"); ?>
+            
             <table class="table-list">
                 <thead>
                     <tr>

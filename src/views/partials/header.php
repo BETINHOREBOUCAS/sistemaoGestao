@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="<?= $base; ?>/assets/css/all.css">
     <link rel="stylesheet" href="<?= $base; ?>/assets/css/style.css">
+    <link rel="stylesheet" href="<?= $base; ?>/assets/css/stylePartial.css">
     <link rel="stylesheet" href="<?= $base; ?>/assets/css/header.css">
     <link rel="stylesheet" href="<?= $base; ?>/assets/css/buy.css">
     <link rel="stylesheet" href="<?= $base; ?>/assets/css/registration.css">
