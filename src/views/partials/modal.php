@@ -11,7 +11,7 @@
     </div>
     <hr>
     <div class="modal-body">
-        <?=$render("addClient");?>
+        Adicionar conteudo
     </div>
 
     <div class="modal-footer">

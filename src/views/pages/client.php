@@ -5,10 +5,21 @@
     <div>
         <div class="person-list">
 
-            <?=$render("search");?>
-            
-            <?=$render("buttonAdd");?>
-            
+            <?= $render("search", ["title" => "Pesquisar Cliente"]); ?>
+
+            <?= $render("buttonAddAjax", [
+                "title" => "Cadastrar Cliente",
+                "input" => [
+                    "nome proprietario",
+                    "nome vendedor",
+                    "celular",
+                    "celular vendedor",
+                    "endereco",
+                    "estado",
+                    "cidade"
+                ]
+            ]); ?>
+
             <table class="table-list">
                 <thead>
                     <tr>

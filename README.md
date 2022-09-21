@@ -1,9 +1,8 @@
 /## Páginas não criadas ##/
     ** Home PHP
         * Clientes
-            - Ajustar modal (javaScript)
-            - Animação ao abrir modal
             - Adicionar conteudo do modal cadastrar cliente
+            - Pegar informações do buttonAddAjax.php e passar para modal.php
         * Estoque Baixo
         * Carrinho
         * Fornecedores

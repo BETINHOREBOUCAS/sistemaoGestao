@@ -9,24 +9,44 @@
     display: none;
 }
 
+.modal-content-exit {
+    z-index: 2;
+    width: 800px;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    margin-left: -400px;
+    border-radius: 10px;
+    animation-name: up;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    top: 8%;
+}
+
+@keyframes up {
+    100% {
+        top: -100%;
+    }
+}
+
 .modal-content {
     z-index: 2;
     width: 800px;
     height: 500px;
     background-color: white;
     position: absolute;
-    top: 8%;
     left: 50%;
     margin-left: -400px;
     border-radius: 10px;
     display: none;
     top: -500px;
-    animation-name: fly;
+    animation-name: down;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
 }
 
-@keyframes fly {
+@keyframes down {
     100% {
         top: 8%;
     }

@@ -5,16 +5,11 @@
 
         <div class="section">
             <div class="line-product">
-                <div class="search">
-                    <input type="text" name="" id="" placeholder="Pesquisar produto">
-                </div>
-                <div class="button_add">
-                    <a href="<?= $base; ?>/inventory/add">
-                        <div class="add-product" title="Adicionar Produto">
-                            <i class="fa-solid fa-square-plus"></i>
-                        </div>
-                    </a>
-                </div>
+
+                <?= $render("search"); ?>
+
+                <?= $render("buttonAddAjax"); ?>
+
                 <div class="product">
 
                     <div id="down"><i class="fa-solid fa-chevron-down"></i></div>

@@ -5,8 +5,12 @@
     <div>
         <div class="person-list">
 
-            <?= $render("search"); ?>
-            <?= $render("buttonAdd"); ?>
+            <?= $render("search", ["title" => "Pesquisar Colaborador"]); ?>
+            
+            <?= $render("buttonAddAjax", [
+                "title" => "Cadastrar Colaborador",
+                "input" => ["nome", "endereco"]
+                ]); ?>
             
             <table class="table-list">
                 <thead>
