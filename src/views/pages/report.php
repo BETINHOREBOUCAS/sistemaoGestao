@@ -1,4 +1,15 @@
-<?php $render("header", ["title" => "Realizar Pedido"]); ?>
+<?= $render("header", [
+    "title" => "Relatórios",
+    "inputModal" => [
+        "inputModal" => [
+            "nome proprietario",
+            "nome vendedor",
+            "celular",
+            "celular vendedor",
+            "endereco"
+        ]
+    ]
+]); ?>
 
 <div class="container">
     <div class="filter_report">

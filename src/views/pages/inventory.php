@@ -1,4 +1,15 @@
-<?= $render("header", ["title" => "Controle de Estoque"]); ?>
+<?= $render("header", [
+    "title" => "Controle de Estoque",
+    "inputModal" => [
+        "inputModal" => [
+            "nome proprietario",
+            "nome vendedor",
+            "celular",
+            "celular vendedor",
+            "endereco"
+        ]
+    ]
+]); ?>
 
 <div class="container">
     <section>

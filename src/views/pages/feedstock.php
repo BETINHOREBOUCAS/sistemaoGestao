@@ -1,4 +1,15 @@
-<?= $render("header", ["title" => "Controle de Matéria Prima"]); ?>
+<?= $render("header", [
+    "title" => "Controle de Matéria Prima",
+    "inputModal" => [
+        "inputModal" => [
+            "nome proprietario",
+            "nome vendedor",
+            "celular",
+            "celular vendedor",
+            "endereco"
+        ]
+    ]
+]); ?>
 
 <div class="container">
     <section>

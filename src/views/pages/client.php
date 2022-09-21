@@ -1,4 +1,17 @@
-<?php $render("header", ["title" => "Clientes"]); ?>
+<?php $render("header", [
+    "title" => "Clientes",
+    "inputModal" => [
+        "inputModal" => [
+            "nome proprietario",
+        "nome vendedor",
+        "celular",
+        "celular vendedor",
+        "endereco",
+        "estado",
+        "cidade"
+        ]
+    ]
+]); ?>
 
 <div class="container">
 
@@ -7,18 +20,7 @@
 
             <?= $render("search", ["title" => "Pesquisar Cliente"]); ?>
 
-            <?= $render("buttonAddAjax", [
-                "title" => "Cadastrar Cliente",
-                "input" => [
-                    "nome proprietario",
-                    "nome vendedor",
-                    "celular",
-                    "celular vendedor",
-                    "endereco",
-                    "estado",
-                    "cidade"
-                ]
-            ]); ?>
+            <?= $render("buttonAddAjax"); ?>
 
             <table class="table-list">
                 <thead>

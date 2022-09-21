@@ -11,7 +11,12 @@
     </div>
     <hr>
     <div class="modal-body">
-        Adicionar conteudo
+        <div class="modal-form">
+            <?php foreach ($inputModal as $key => $value) : ?>
+                <div><label for="<?= $value; ?>"><?= $value; ?></label><br>
+                <input type="text" name="<?= $value; ?>" id="<?= $value; ?>"> <br></div>
+            <?php endforeach ?>
+        </div>
     </div>
 
     <div class="modal-footer">
@@ -20,10 +25,10 @@
             <button>
                 <div class="svg-wrapper-1">
                     <div class="svg-wrapper">
-                    <i class="fa-solid fa-download" viewBox="0 0 24 24" width="24" height="24"></i>
-                        
-                            <path fill="none" d="M0 0h24v24H0z"></path>
-                            <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                        <i class="fa-solid fa-download" viewBox="0 0 24 24" width="24" height="24"></i>
+
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
                         </svg>
                     </div>
                 </div>

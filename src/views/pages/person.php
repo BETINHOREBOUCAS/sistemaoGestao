@@ -1,4 +1,15 @@
-<?= $render("header", ["title" => "Colaboradores"]); ?>
+<?= $render("header", [
+    "title" => "Colaboradores",
+    "inputModal" => [
+        "inputModal" => [
+            "nome proprietario",
+            "nome vendedor",
+            "celular",
+            "celular vendedor",
+            "endereco"
+        ]
+    ]
+]); ?>
 
 <div class="container">
 
@@ -6,12 +17,9 @@
         <div class="person-list">
 
             <?= $render("search", ["title" => "Pesquisar Colaborador"]); ?>
-            
-            <?= $render("buttonAddAjax", [
-                "title" => "Cadastrar Colaborador",
-                "input" => ["nome", "endereco"]
-                ]); ?>
-            
+
+            <?= $render("buttonAddAjax"); ?>
+
             <table class="table-list">
                 <thead>
                     <tr>
