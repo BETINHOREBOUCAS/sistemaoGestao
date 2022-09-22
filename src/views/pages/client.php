@@ -1,17 +1,4 @@
-<?php $render("header", [
-    "title" => "Clientes",
-    "inputModal" => [
-        "inputModal" => [
-            "nome proprietario",
-        "nome vendedor",
-        "celular",
-        "celular vendedor",
-        "endereco",
-        "estado",
-        "cidade"
-        ]
-    ]
-]); ?>
+<?php $render("header", ["title" => "Clientes"]); ?>
 
 <div class="container">
 
@@ -26,6 +13,7 @@
                 <thead>
                     <tr>
                         <th>Nome</th>
+                        <th>Vendedor</th>
                         <th>Endereço</th>
                         <th>Ações</th>
                     </tr>
@@ -34,25 +22,14 @@
                 <tbody>
                     <tr>
                         <td>Paulo</td>
-                        <td>Lagoa dos Porcos</td>
+                        <td>Raimundo</td>
+                        <td>Mercado Central</td>
                         <td>
                             <div class="person-icons">
-                                <div><i class="fa-solid fa-clock-rotate-left"></i></div>
-                                <div><i class="fa-solid fa-circle-plus"></i></div>
-                                <div><i class="fa-solid fa-pen-to-square"></i></div>
-                                <div><i class="fa-solid fa-trash-can"></i></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Paulo</td>
-                        <td>Lagoa dos Porcos</td>
-                        <td>
-                            <div class="person-icons">
-                                <div><i class="fa-solid fa-clock-rotate-left"></i></div>
-                                <div><i class="fa-solid fa-circle-plus"></i></div>
-                                <div><i class="fa-solid fa-pen-to-square"></i></div>
-                                <div><i class="fa-solid fa-trash-can"></i></div>
+                                <div title="Histórico de Compras"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                                <!--<div><i class="fa-solid fa-circle-plus"></i></div>-->
+                                <div title="Editar Cliente"><i class="fa-solid fa-pen-to-square"></i></div>
+                                <div title="Excluir Cliente"><i class="fa-solid fa-trash-can"></i></div>
                             </div>
                         </td>
                     </tr>
@@ -62,5 +39,7 @@
     </div>
 
 </div>
+
+<?=$render("modal");?>
 
 <?= $render("footer"); ?>

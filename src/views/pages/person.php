@@ -1,15 +1,4 @@
-<?= $render("header", [
-    "title" => "Colaboradores",
-    "inputModal" => [
-        "inputModal" => [
-            "nome proprietario",
-            "nome vendedor",
-            "celular",
-            "celular vendedor",
-            "endereco"
-        ]
-    ]
-]); ?>
+<?php $render("header", ["title" => "Colaboradores"]); ?>
 
 <div class="container">
 
@@ -63,5 +52,7 @@
     </div>
 
 </div>
+
+<?= $render("modal"); ?>
 
 <?= $render("footer"); ?>

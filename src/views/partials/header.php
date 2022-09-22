@@ -25,8 +25,6 @@
 
 <body>
 
-    <?= $render("modal", $inputModal); ?>
-
     <header>
         <div class="header">
 

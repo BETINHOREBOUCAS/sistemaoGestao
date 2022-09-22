@@ -1,15 +1,4 @@
-<?= $render("header", [
-    "title" => "Controle de Matéria Prima",
-    "inputModal" => [
-        "inputModal" => [
-            "nome proprietario",
-            "nome vendedor",
-            "celular",
-            "celular vendedor",
-            "endereco"
-        ]
-    ]
-]); ?>
+<?php $render("header", ["title" => "Matéria Prima"]); ?>
 
 <div class="container">
     <section>
@@ -106,5 +95,7 @@
 
     </section>
 </div>
+
+<?= $render("modal"); ?>
 
 <?= $render("footer"); ?>

@@ -11,12 +11,7 @@
     </div>
     <hr>
     <div class="modal-body">
-        <div class="modal-form">
-            <?php foreach ($inputModal as $key => $value) : ?>
-                <div><label for="<?= $value; ?>"><?= $value; ?></label><br>
-                <input type="text" name="<?= $value; ?>" id="<?= $value; ?>"> <br></div>
-            <?php endforeach ?>
-        </div>
+        Conteúdo do modal...
     </div>
 
     <div class="modal-footer">
@@ -32,7 +27,7 @@
                         </svg>
                     </div>
                 </div>
-                <span>Cadastrar</span>
+                <span>Salvar</span>
             </button>
         </div>
     </div>
