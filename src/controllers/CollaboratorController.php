@@ -9,4 +9,9 @@ class CollaboratorController extends Controller {
         $this->render('person');
     }
 
+    public function post() {
+        
+        print_r($_POST);
+    }
+
 }

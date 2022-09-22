@@ -13,6 +13,7 @@ $router->get('/inventory/add', 'InventoryController@add');
 $router->get('/inventory/edit/{id}', 'InventoryController@edit');
 
 $router->get('/collaborator', 'CollaboratorController@index');
+$router->post('/collaborator', 'CollaboratorController@post');
 
 $router->get('/feedstock', 'FeedstockController@index');
 
