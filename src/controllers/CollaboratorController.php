@@ -11,6 +11,7 @@ class CollaboratorController extends Controller {
 
     public function post() {
         
+        echo "<pre>";
         print_r($_POST);
     }
 
