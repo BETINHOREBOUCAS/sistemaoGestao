@@ -7,7 +7,7 @@
 
             <?= $render("search", ["title" => "Pesquisar Cliente"]); ?>
 
-            <?= $render("buttonAdd", ["title" => "Cadastrar Cliente", "url" => "teste"]); ?>
+            <?= $render("buttonAdd", ["title" => "Cadastrar Cliente", "url" => "clientAdd"]); ?>
 
             <table class="table-list">
                 <thead>
@@ -26,10 +26,26 @@
                         <td>Mercado Central</td>
                         <td>
                             <div class="person-icons">
-                                <div title="Histórico de Compras"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                                <div title="Histórico de Compras" class="historic"><i class="fa-solid fa-clock-rotate-left"></i></div>
                                 <!--<div><i class="fa-solid fa-circle-plus"></i></div>-->
-                                <div title="Editar Cliente"><i class="fa-solid fa-pen-to-square"></i></div>
-                                <div title="Excluir Cliente"><i class="fa-solid fa-trash-can"></i></div>
+                                <div title="Editar Cliente" class="edit"><i class="fa-solid fa-pen-to-square"></i></div>
+                                <div title="Excluir Cliente" class="delete"><i class="fa-solid fa-trash-can"></i></div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+
+                <tbody>
+                    <tr>
+                        <td>Pedro</td>
+                        <td>-</td>
+                        <td>Mercado Central</td>
+                        <td>
+                            <div class="person-icons">
+                                <div title="Histórico de Compras" class="historic"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                                <!--<div><i class="fa-solid fa-circle-plus"></i></div>-->
+                                <div title="Editar Cliente" class="edit"><i class="fa-solid fa-pen-to-square"></i></div>
+                                <div title="Excluir Cliente" class="delete"><i class="fa-solid fa-trash-can"></i></div>
                             </div>
                         </td>
                     </tr>

@@ -9,8 +9,4 @@ class HomeController extends Controller {
         $this->render('home', ['nome' => 'Bonieky']);
     }
 
-    public function client() {
-        $this->render('client');
-    }
-
 }
