@@ -7,7 +7,7 @@
 
             <?= $render("search", ["title" => "Pesquisar Cliente"]); ?>
 
-            <?= $render("buttonAddAjax"); ?>
+            <?= $render("buttonAdd", ["title" => "Cadastrar Cliente", "url" => "teste"]); ?>
 
             <table class="table-list">
                 <thead>

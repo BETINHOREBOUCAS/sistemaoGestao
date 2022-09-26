@@ -12,18 +12,3 @@ notification.addEventListener("click", function(){
         display.style.display = "none";
     }
 });
-
-display.addEventListener("click", function(){
-    this.style.display = "none";
-    barNotification.style.display = "none";
-});
-
-// Controlando modal
-
-var modal = document.querySelector('#modal');
-var modalConteudo = document.querySelector('#modal-content');
-
-modal.addEventListener('click', function(){
-    this.style.display = 'none';
-    modalConteudo.style.display = 'none';
-})
