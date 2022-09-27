@@ -9,6 +9,7 @@ $router->get('/client', 'ClientController@index');
 $router->get('/clientAdd', 'ClientController@clientAdd');
 
 $router->get('/buy', 'BuyController@index');
+$router->get('/buy/historic', 'BuyController@buyHistoric');
 
 $router->get('/inventory', 'InventoryController@index');
 $router->get('/inventory/add', 'InventoryController@add');

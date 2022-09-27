@@ -1,4 +1,4 @@
-
+<div class="modal-black-delete"></div>
 <div class="modal-content-delete">
     <div class="modal-header-delete">
         <div>
@@ -11,7 +11,7 @@
     </div>
     <hr>
     <div class="modal-footer-delete">
-        <input type="button" value="Sim">
-        <input type="submit" value="Não">
+        <button id="sim">Sim</button>
+        <Button id="nao">Não</Button>
     </div>
 </div>

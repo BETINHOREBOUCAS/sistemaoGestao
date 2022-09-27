@@ -26,9 +26,9 @@
                         <td>Mercado Central</td>
                         <td>
                             <div class="person-icons">
-                                <div title="Histórico de Compras" class="historic"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                                <div title="Histórico de Compras" class="historic" url="<?=$base;?>/buy/historic"><i class="fa-solid fa-clock-rotate-left"></i></div>
                                 <!--<div><i class="fa-solid fa-circle-plus"></i></div>-->
-                                <div title="Editar Cliente" class="edit"><i class="fa-solid fa-pen-to-square"></i></div>
+                                <div title="Editar Cliente" class="edit" url="<?=$base;?>/clienteAdd"><i class="fa-solid fa-pen-to-square"></i></div>
                                 <div title="Excluir Cliente" class="delete"><i class="fa-solid fa-trash-can"></i></div>
                             </div>
                         </td>
@@ -42,9 +42,9 @@
                         <td>Mercado Central</td>
                         <td>
                             <div class="person-icons">
-                                <div title="Histórico de Compras" class="historic"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                                <div title="Histórico de Compras" class="historic" url="<?=$base;?>/buy/historic"><i class="fa-solid fa-clock-rotate-left"></i></div>
                                 <!--<div><i class="fa-solid fa-circle-plus"></i></div>-->
-                                <div title="Editar Cliente" class="edit"><i class="fa-solid fa-pen-to-square"></i></div>
+                                <div title="Editar Cliente" class="edit" url="<?=$base;?>/clientAdd"><i class="fa-solid fa-pen-to-square"></i></div>
                                 <div title="Excluir Cliente" class="delete"><i class="fa-solid fa-trash-can"></i></div>
                             </div>
                         </td>

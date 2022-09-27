@@ -1,9 +1,7 @@
 /## Páginas não criadas ##/
-    ** Home PHP
+    ** Home JavaScript
         * Clientes
             - historico de compras
-            - editar cliente
-            - deletar cliente concluir o modal
         * Estoque Baixo
         * Carrinho
         * Fornecedores
@@ -12,7 +10,7 @@
         * Contas a receber
         * Pedidos a fornecedores
 
-    ** Heades PHP
+    ** Heades JavaScript
         * Notificação
         * Carrinho (link para redirecionar)
         * Perfil

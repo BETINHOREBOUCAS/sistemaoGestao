@@ -9,4 +9,8 @@ class BuyController extends Controller {
         $this->render('buy');
     }
 
+    public function buyHistoric() {
+        $this->render("buyHistoric");
+    }
+
 }

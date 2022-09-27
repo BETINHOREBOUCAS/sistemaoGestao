@@ -10,7 +10,7 @@ class ClientController extends Controller {
     }
 
     public function clientAdd() {
-        $this->render('clientAdd');
+        $this->render('clientForm');
     }
 
 }
