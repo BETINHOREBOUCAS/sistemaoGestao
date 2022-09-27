@@ -46,6 +46,22 @@
     animation-fill-mode: forwards;
 }
 
+.modal-content-delete {
+    z-index: 2;
+    width: 500px;
+    height: 150px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    margin-left: -250px;
+    border-radius: 10px;
+    display: block;
+    top: -500px;
+    animation-name: down;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
 @keyframes down {
     100% {
         top: 8%;
@@ -54,8 +70,7 @@
 
 #exit {
     position: relative;
-    left: 550px;
-    top: -10px;
+    left: 500px;
     color: red;
     font-size: 16pt;
     cursor: pointer;
@@ -82,9 +97,22 @@
     height: 40px;
 }
 
+.modal-header div:first-child {
+    width: 250px;
+}
+
 .modal-header,
 .modal-body {
     margin: 15px;
+}
+
+.modal-body .img-modal {
+    text-align: center;
+}
+
+.modal-body .img-modal img {
+    width: 60%;
+    height: 300px;
 }
 
 .modal-form div {

@@ -6,6 +6,9 @@ var modalBlack = document.getElementsByClassName("modal-black")[0];
 var modalContent = document.getElementsByClassName("modal-content")[0];
 var buttonModal = document.getElementsByClassName("add-content")[0];
 var exit = document.getElementById("exit");
+var loading = document.getElementsByClassName("img-modal")[0];
+var title = document.querySelector(".modal-header div h2");
+
 /*==============================================================================================*/
                                     // FIM
 /*==============================================================================================*/
@@ -26,13 +29,15 @@ async function request(url) {
 /*==============================================================================================*/
                                 // Manipulação do modal
 /*==============================================================================================*/
-// Abri o modal
+// Abri o modal principal
 function openModal() {
+    // outerHTML transforma objeto em string
+    bodyModal.innerHTML = loading.outerHTML;
     modalBlack.style.display = "block";
     modalContent.style.display = "block";
 }
 
-// Fecha o modal
+// Fecha o modal principal
 function closedModal() {
     modalContent.classList.remove("modal-content");
     modalContent.classList.add("modal-content-exit");
@@ -52,6 +57,7 @@ function closedModal() {
 /*==============================================================================================*/
 buttonModal.addEventListener("click", () => {
     request(buttonModal.getAttribute("url"));
+    title.innerHTML = buttonModal.getAttribute("title");
     openModal();    
 })
 
@@ -67,7 +73,7 @@ modalBlack.addEventListener("click", function () {
 /*==============================================================================================*/
 
 /*==============================================================================================*/
-            // Ao clicar nao opções da lista na página de clientes irá abrir o modal
+            // Ao clicar nas opções da lista na página de clientes irá abrir o modal
 /*==============================================================================================*/
 var historic = document.getElementsByClassName("historic");
 var edit = document.getElementsByClassName("edit");
@@ -75,18 +81,21 @@ var del = document.getElementsByClassName("delete");
 
 for (let index = 0; index < historic.length; index++) {
     historic[index].addEventListener("click", () => {
+        title.innerHTML = historic[index].getAttribute("title");
         openModal();
     });
 };
 
 for (let index = 0; index < edit.length; index++) {
     edit[index].addEventListener("click", () => {
+        title.innerHTML = edit[index].getAttribute("title");
         openModal();
     });
 };
 
 for (let index = 0; index < del.length; index++) {
     del[index].addEventListener("click", () => {
+        title.innerHTML = del[index].getAttribute("title");
         openModal();
     });
 };

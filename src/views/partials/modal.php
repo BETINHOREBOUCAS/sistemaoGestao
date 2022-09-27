@@ -11,7 +11,9 @@
     </div>
     <hr>
     <div class="modal-body">
-        Conteúdo do modal...
+        <div class="img-modal">
+            <img src="<?=$base;?>/assets/img/loading.jpg">
+        </div>
     </div>
 
     <div class="modal-footer">

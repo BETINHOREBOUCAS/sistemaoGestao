@@ -1,8 +1,9 @@
 /## Páginas não criadas ##/
     ** Home PHP
         * Clientes
-            - Adicionar conteudo do modal cadastrar cliente
-            - Pegar informações do buttonAddAjax.php e passar para modal.php
+            - historico de compras
+            - editar cliente
+            - deletar cliente concluir o modal
         * Estoque Baixo
         * Carrinho
         * Fornecedores
