@@ -103,18 +103,8 @@ buttonNao.addEventListener("click", () => {
 /*==============================================================================================*/
             // Ao clicar nas opções da lista na página de clientes irá abrir o modal
 /*==============================================================================================*/
-var historic = document.getElementsByClassName("historic");
 var edit = document.getElementsByClassName("edit");
 var del = document.getElementsByClassName("delete");
-
-for (let index = 0; index < historic.length; index++) {
-    historic[index].addEventListener("click", () => {
-        title.innerHTML = historic[index].getAttribute("title");
-        request(historic[index].getAttribute("url"));
-        document.querySelector(".modal-footer").style.display = "none";
-        openModal();
-    });
-};
 
 for (let index = 0; index < edit.length; index++) {
     edit[index].addEventListener("click", () => {

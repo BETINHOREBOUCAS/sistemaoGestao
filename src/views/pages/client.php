@@ -5,59 +5,33 @@
     <div>
         <div class="person-list">
 
-            <?= $render("search", ["title" => "Pesquisar Cliente"]); ?>
+            <?= $render("search", ["title" => "Pesquisar Cliente", "url" => "search/10"]); ?>
 
             <?= $render("buttonAdd", ["title" => "Cadastrar Cliente", "url" => "clientAdd"]); ?>
 
-            <table class="table-list">
-                <thead>
-                    <tr>
-                        <th>Nome</th>
-                        <th>Vendedor</th>
-                        <th>Endereço</th>
-                        <th>Ações</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td>Paulo</td>
-                        <td>Raimundo</td>
-                        <td>Mercado Central</td>
-                        <td>
-                            <div class="person-icons">
-                                <div title="Histórico de Compras" class="historic" url="<?=$base;?>/buy/historic"><i class="fa-solid fa-clock-rotate-left"></i></div>
-                                <!--<div><i class="fa-solid fa-circle-plus"></i></div>-->
-                                <div title="Editar Cliente" class="edit" url="<?=$base;?>/clienteAdd"><i class="fa-solid fa-pen-to-square"></i></div>
-                                <div title="Excluir Cliente" class="delete"><i class="fa-solid fa-trash-can"></i></div>
-                            </div>
-                        </td>
-                    </tr>
-                </tbody>
-
-                <tbody>
-                    <tr>
-                        <td>Pedro</td>
-                        <td>-</td>
-                        <td>Mercado Central</td>
-                        <td>
-                            <div class="person-icons">
-                                <div title="Histórico de Compras" class="historic" url="<?=$base;?>/buy/historic"><i class="fa-solid fa-clock-rotate-left"></i></div>
-                                <!--<div><i class="fa-solid fa-circle-plus"></i></div>-->
-                                <div title="Editar Cliente" class="edit" url="<?=$base;?>/clientAdd"><i class="fa-solid fa-pen-to-square"></i></div>
-                                <div title="Excluir Cliente" class="delete"><i class="fa-solid fa-trash-can"></i></div>
-                            </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <?= $render("clientList", [
+                "clients" => [
+                    [
+                        "id" => 1,
+                        "nome" => "Vanessa",
+                        "vendedor" => "-",
+                        "endereco" => "São José"
+                    ],
+                    [
+                        "id" => 2,
+                        "nome" => "José",
+                        "vendedor" => "Maria",
+                        "endereco" => "Giqui"
+                    ]
+                ]
+            ]); ?>
         </div>
     </div>
 
 </div>
 
-<?=$render("modal");?>
+<?= $render("modal"); ?>
 
-<?=$render("modalDelete");?>
+<?= $render("modalDelete"); ?>
 
 <?= $render("footer"); ?>

@@ -7,7 +7,13 @@
 .search {
     display: flex;
     justify-content: center;
-    background-color: #f1f4f5e8;
+    background-color: #eee;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+#search-button {
+    padding: 10px;
 }
 
 .search input {
@@ -17,7 +23,6 @@
     font-size: 10pt;
     padding: 10px;
     border: #888888 solid 1px;
-    margin-bottom: 20px;
 }
 
 .product {
