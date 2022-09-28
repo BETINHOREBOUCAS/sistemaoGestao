@@ -1,0 +1,1 @@
+<?=$render($page, ["clients" => $clients]);?>

@@ -1,4 +1,3 @@
-
 <table class="table-list">
     <thead>
         <tr>
@@ -21,9 +20,9 @@
                             <div title="Histórico de Compras"><i class="fa-solid fa-clock-rotate-left"></i></div>
                         </a>
 
-                        <div title="Editar Cliente" class="edit" url="<?= $base; ?>/clientAdd"><i class="fa-solid fa-pen-to-square"></i></div>
+                        <div title="Editar Cliente" class="edit" onclick='edit("<?= $base; ?>/clientAdd", "Editar Cliente", 2)'><i class="fa-solid fa-pen-to-square"></i></div>
 
-                        <div title="Excluir Cliente" class="delete"><i class="fa-solid fa-trash-can"></i></div>
+                        <div title="Excluir Cliente" class="delete" onclick="del()"><i class="fa-solid fa-trash-can"></i></div>
                     </div>
                 </td>
             </tr>

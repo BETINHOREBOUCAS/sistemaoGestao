@@ -14,7 +14,8 @@ class ClientController extends Controller {
     }
 
     public function searchClient() {
-        $this->render('client', [
+        $this->render('access', [
+            "page" => "clientList",
             "clients" => [
                 [
                     "id" => 1,
@@ -28,7 +29,7 @@ class ClientController extends Controller {
                     "vendedor" => "Maria",
                     "endereco" => "Giqui"
                 ]
-            ]]);
+            ]
+        ]);
     }
-
 }

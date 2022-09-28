@@ -1,5 +1,5 @@
 /*==============================================================================================*/
-                                    // Variaveis globais
+// Variaveis globais
 /*==============================================================================================*/
 var bodyModal = document.getElementsByClassName("modal-body")[0];
 var modalBlack = document.getElementsByClassName("modal-black")[0];
@@ -12,11 +12,11 @@ var modalDelete = document.querySelector(".modal-content-delete");
 var modalBlackDelete = document.querySelector(".modal-black-delete");
 var buttonNao = document.getElementById("nao");
 /*==============================================================================================*/
-                                    // FIM
+// FIM
 /*==============================================================================================*/
 
 /*==============================================================================================*/
-                                // Requisões POST E GET
+// Requisões POST E GET
 /*==============================================================================================*/
 async function request(url) {
     let req = await fetch(url);
@@ -24,12 +24,12 @@ async function request(url) {
     bodyModal.innerHTML = result
 }
 /*==============================================================================================*/
-                                    // FIM
+// FIM
 /*==============================================================================================*/
 
 
 /*==============================================================================================*/
-                                // Manipulação do modal
+// Manipulação do modal
 /*==============================================================================================*/
 // Abri o modal principal
 function openModal() {
@@ -43,7 +43,7 @@ function openModal() {
 function closedModal() {
     modalContent.classList.remove("modal-content");
     modalContent.classList.add("modal-content-exit");
-    setTimeout( () => {
+    setTimeout(() => {
         modalContent.classList.add("modal-content");
         modalContent.classList.remove("modal-content-exit");
         modalBlack.style.display = "none";
@@ -61,7 +61,7 @@ function openModalDel() {
 function closedModalDel() {
     modalDelete.classList.remove("modal-content-delete");
     modalDelete.classList.add("modal-content-exit-delete");
-    setTimeout( () => {
+    setTimeout(() => {
         modalDelete.classList.add("modal-content-delete");
         modalDelete.classList.remove("modal-content-exit-delete");
         modalBlackDelete.style.display = "none";
@@ -69,16 +69,16 @@ function closedModalDel() {
     }, 200);
 }
 /*==============================================================================================*/
-                                    // FIM
+// FIM
 /*==============================================================================================*/
 
 /*==============================================================================================*/
-                                // Ações de Click
+// Ações de Click
 /*==============================================================================================*/
 buttonModal.addEventListener("click", () => {
     request(buttonModal.getAttribute("url"));
     title.innerHTML = buttonModal.getAttribute("title");
-    openModal();    
+    openModal();
 })
 
 exit.addEventListener("click", function () {
@@ -97,13 +97,13 @@ buttonNao.addEventListener("click", () => {
     closedModalDel();
 })
 /*==============================================================================================*/
-                                    // FIM
+// FIM
 /*==============================================================================================*/
 
 /*==============================================================================================*/
-            // Ao clicar nas opções da lista na página de clientes irá abrir o modal
+// Ao clicar nas opções da lista na página de clientes irá abrir o modal
 /*==============================================================================================*/
-var edit = document.getElementsByClassName("edit");
+/*var edit = document.getElementsByClassName("edit");
 var del = document.getElementsByClassName("delete");
 
 for (let index = 0; index < edit.length; index++) {
@@ -119,7 +119,18 @@ for (let index = 0; index < del.length; index++) {
         title.innerHTML = del[index].getAttribute("title");
         openModalDel();
     });
-};
+};*/
 /*==============================================================================================*/
-                                    // FIM
+// FIM
 /*==============================================================================================*/
+
+function del() {
+    title.innerHTML = this.title.outerHTML;
+    openModalDel();
+}
+
+function edit(url, tit, idClient) {
+    title.innerHTML = tit;
+    request(url);
+    openModal();
+}
