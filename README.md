@@ -1,7 +1,7 @@
 /## Páginas não criadas ##/
     ** Home JavaScript
-        * Clientes
-            - historico de compras
+        * Clientes (concluído).
+
         * Estoque Baixo
         * Carrinho
         * Fornecedores
@@ -19,7 +19,6 @@
 
     // collaborator JavaScript //
         ** MODAL fetch (AJAX)**
-            * Pesquisa 3 segundos mostrar resultado
             * Histórico de produtos
             * Add produto
             * Add colaborador
@@ -33,18 +32,15 @@
     // buy JavaScript //
         ** MODAL fetch (AJAX)**
             * Atualizar quantidade no carrinho
-            * Pesquisa 3 segundos mostrar resultado
 
     // inventory JavaScript //
         ** MODAL fetch (AJAX)**
             * Atualizar quantidade no estoque
             * Editar Produto
-            * Pesquisa 3 segundos mostrar resultado
 
     // feedstoc JavaScript //
         ** MODAL fetch (AJAX)**
             * Atualizar quantidade no estoque
-            * Pesquisa 3 segundos mostrar resultado
             * add produto
             * editar produto
         

@@ -28,7 +28,7 @@ async function requestBody(url, loading) {
 /*==============================================================================================*/
                                 // Buscador de clientes
 /*==============================================================================================*/
-searchButton.addEventListener("click", () => {
+searchButton.addEventListener("click", (event) => {
     let input = document.querySelector(".search input");
     let url = input.getAttribute("url"); 
     let loading = document.querySelector(".table-list");

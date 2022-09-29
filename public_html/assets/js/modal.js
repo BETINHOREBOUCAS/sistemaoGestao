@@ -101,29 +101,8 @@ buttonNao.addEventListener("click", () => {
 /*==============================================================================================*/
 
 /*==============================================================================================*/
-// Ao clicar nas opções da lista na página de clientes irá abrir o modal
+// Ações dos clientes
 /*==============================================================================================*/
-/*var edit = document.getElementsByClassName("edit");
-var del = document.getElementsByClassName("delete");
-
-for (let index = 0; index < edit.length; index++) {
-    edit[index].addEventListener("click", () => {
-        title.innerHTML = edit[index].getAttribute("title");
-        request(edit[index].getAttribute("url"));
-        openModal();
-    });
-};
-
-for (let index = 0; index < del.length; index++) {
-    del[index].addEventListener("click", () => {
-        title.innerHTML = del[index].getAttribute("title");
-        openModalDel();
-    });
-};*/
-/*==============================================================================================*/
-// FIM
-/*==============================================================================================*/
-
 function del() {
     title.innerHTML = this.title.outerHTML;
     openModalDel();
@@ -134,3 +113,6 @@ function edit(url, tit, idClient) {
     request(url);
     openModal();
 }
+/*==============================================================================================*/
+// FIM
+/*==============================================================================================*/
