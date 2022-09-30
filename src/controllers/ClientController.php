@@ -6,7 +6,26 @@ use \core\Controller;
 class ClientController extends Controller {
 
     public function index() {
-        $this->render('client');
+        $this->render('client', [
+            "infoPerson" => [
+                "action" => "client",
+                "personTitle" => ["Nome", "Vendedor", "Endereço", "Ações"],
+                "person" => [
+                    [
+                        "id" => 1,
+                        "nome" => "Vanessa",
+                        "vendedor" => "-",
+                        "endereco" => "São José"
+                    ],
+                    [
+                        "id" => 2,
+                        "nome" => "José",
+                        "vendedor" => "Maria",
+                        "endereco" => "Giqui"
+                    ]
+                ]
+            ]
+        ]);
     }
 
     public function clientAdd() {
@@ -15,21 +34,48 @@ class ClientController extends Controller {
 
     public function searchClient() {
         $this->render('access', [
-            "page" => "clientList",
-            "clients" => [
-                [
-                    "id" => 1,
-                    "nome" => "Teste",
-                    "vendedor" => "-",
-                    "endereco" => "São José"
-                ],
-                [
-                    "id" => 2,
-                    "nome" => "Teste2",
-                    "vendedor" => "Maria",
-                    "endereco" => "Giqui"
+            "page" => "personList",
+            "infoPerson" => [
+                "action" => "client",
+                "personTitle" => ["Nome", "Vendedor", "Endereço", "Ações"],
+                "person" => [
+                    [
+                        "id" => 1,
+                        "nome" => "Teste",
+                        "vendedor" => "-",
+                        "endereco" => "São José"
+                    ],
+                    [
+                        "id" => 2,
+                        "nome" => "Teste2",
+                        "vendedor" => "Maria",
+                        "endereco" => "Giqui"
+                    ]
                 ]
             ]
         ]);
     }
 }
+
+/*
+$this->render('access', [
+            "page" => "personList",
+            "infoPerson" => [
+                "clientTitle" => ["nome", "teste"],
+                "clients" => [
+                    [
+                        "id" => 1,
+                        "nome" => "Teste",
+                        "vendedor" => "-",
+                        "endereco" => "São José"
+                    ],
+                    [
+                        "id" => 2,
+                        "nome" => "Teste2",
+                        "vendedor" => "Maria",
+                        "endereco" => "Giqui"
+                    ]
+                ]
+            ]
+        ]);
+*/

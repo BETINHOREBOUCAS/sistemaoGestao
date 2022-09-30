@@ -1,1 +1,1 @@
-<?=$render($page, ["clients" => $clients]);?>
+<?=$render($page, ["infoPerson" => $infoPerson]);?>

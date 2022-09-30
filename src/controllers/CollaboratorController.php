@@ -6,7 +6,60 @@ use \core\Controller;
 class CollaboratorController extends Controller {
 
     public function index() {
-        $this->render('person');
+        $this->render('collaborator', [
+            "infoPerson" => [
+                "action" => "collaborator",
+                "personTitle" => [
+                    "Nome",
+                    "Função",
+                    "Endereço",
+                    "Ações"
+                ],
+                "person" => [
+                    [
+                        "id" => 1,
+                        "nome" => "Paulo",
+                        "funcao" => "Impunhador",
+                        "endereco" => "São José"
+                    ],
+                    [
+                        "id" => 2,
+                        "nome" => "José",
+                        "funcao" => "-",
+                        "endereco" => "Giqui"
+                    ]
+                ]
+            ]
+        ]);
+    }
+    
+    public function searchCollaborator() {
+        $this->render('access', [
+            "page" => "personList",
+            "infoPerson" => [
+                "action" => "collaborator",
+                "personTitle" => [
+                    "Nome",
+                    "Função",
+                    "Endereço",
+                    "Ações"
+                ],
+                "person" => [
+                    [
+                        "id" => 1,
+                        "nome" => "teste",
+                        "funcao" => "Impunhador",
+                        "endereco" => "São José"
+                    ],
+                    [
+                        "id" => 2,
+                        "nome" => "Teste2",
+                        "funcao" => "-",
+                        "endereco" => "Giqui"
+                    ]
+                ]
+            ]
+        ]);
     }
 
     public function post() {
