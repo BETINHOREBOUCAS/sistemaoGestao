@@ -8,7 +8,7 @@ class ClientController extends Controller {
     public function index() {
         $this->render('client', [
             "infoPerson" => [
-                "action" => "client",
+                "pageTitle" => "Cliente",
                 "personTitle" => ["Nome", "Vendedor", "Endereço", "Ações"],
                 "person" => [
                     [
@@ -36,7 +36,7 @@ class ClientController extends Controller {
         $this->render('access', [
             "page" => "personList",
             "infoPerson" => [
-                "action" => "client",
+                "pageTitle" => "Cliente",
                 "personTitle" => ["Nome", "Vendedor", "Endereço", "Ações"],
                 "person" => [
                     [

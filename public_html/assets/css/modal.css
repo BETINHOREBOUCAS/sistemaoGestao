@@ -97,7 +97,7 @@
 
 #exit {
     position: relative;
-    left: 550px;
+    left: 500px;
     color: red;
     font-size: 16pt;
     cursor: pointer;
@@ -137,7 +137,7 @@
 }
 
 .modal-header div:first-child {
-    width: 250px;
+    width: 300px;
 }
 
 .modal-header,

@@ -8,7 +8,7 @@
         </tr>
     </thead>
 
-    <?php if ($infoPerson['action'] == "client") : ?>
+    <?php if ($infoPerson['pageTitle'] == "Cliente") : ?>
         <?php foreach ($infoPerson["person"] as $key => $value) : ?>
             <tbody>
                 <tr>
@@ -21,9 +21,9 @@
                                 <div title="Histórico de Compras"><i class="fa-solid fa-clock-rotate-left"></i></div>
                             </a>
 
-                            <div title="Editar Cliente" class="edit" onclick='edit("<?= $base; ?>/clientAdd", "Editar Cliente", 2)'><i class="fa-solid fa-pen-to-square"></i></div>
+                            <div title=" <?=$infoPerson['pageTitle'];?>" class="edit" onclick="edit('<?= $base; ?>/clientAdd', 'Editar <?=$infoPerson['pageTitle'];?>', 2)"><i class="fa-solid fa-pen-to-square"></i></div>
 
-                            <div title="Excluir Cliente" class="delete" onclick="del()"><i class="fa-solid fa-trash-can"></i></div>
+                            <div title="Excluir <?=$infoPerson['pageTitle'];?>" class="delete" onclick="del()"><i class="fa-solid fa-trash-can"></i></div>
                         </div>
                     </td>
                 </tr>
@@ -31,10 +31,10 @@
         <?php endforeach ?>
     <?php endif ?>
 
-    <?php if ($infoPerson['action'] == "collaborator") : ?>
+    <?php if ($infoPerson['pageTitle'] == "Colaborador") : ?>
         <?php foreach ($infoPerson["person"] as $key => $value) : ?>
             <tbody>
-                <tr>
+            <tr>
                     <td><?= $value['nome']; ?></td>
                     <td><?= $value['funcao']; ?></td>
                     <td><?= $value['endereco']; ?></td>
@@ -44,9 +44,9 @@
                                 <div title="Histórico de Compras"><i class="fa-solid fa-clock-rotate-left"></i></div>
                             </a>
 
-                            <div title="Editar Cliente" class="edit" onclick='edit("<?= $base; ?>/clientAdd", "Editar Cliente", 2)'><i class="fa-solid fa-pen-to-square"></i></div>
+                            <div title=" <?=$infoPerson['pageTitle'];?>" class="edit" onclick="edit('<?= $base; ?>/clientAdd', 'Editar <?=$infoPerson['pageTitle'];?>', 2)"><i class="fa-solid fa-pen-to-square"></i></div>
 
-                            <div title="Excluir Cliente" class="delete" onclick="del()"><i class="fa-solid fa-trash-can"></i></div>
+                            <div title="Excluir <?=$infoPerson['pageTitle'];?>" class="delete" onclick="del()"><i class="fa-solid fa-trash-can"></i></div>
                         </div>
                     </td>
                 </tr>

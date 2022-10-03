@@ -8,7 +8,7 @@ class CollaboratorController extends Controller {
     public function index() {
         $this->render('collaborator', [
             "infoPerson" => [
-                "action" => "collaborator",
+                "pageTitle" => "Colaborador",
                 "personTitle" => [
                     "Nome",
                     "Função",
@@ -37,7 +37,7 @@ class CollaboratorController extends Controller {
         $this->render('access', [
             "page" => "personList",
             "infoPerson" => [
-                "action" => "collaborator",
+                "pageTitle" => "Colaborador",
                 "personTitle" => [
                     "Nome",
                     "Função",

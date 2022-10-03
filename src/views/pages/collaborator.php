@@ -17,4 +17,6 @@
 
 <?= $render("modal"); ?>
 
+<?= $render("modalDelete"); ?>
+
 <?= $render("footer"); ?>
