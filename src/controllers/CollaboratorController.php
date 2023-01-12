@@ -32,6 +32,10 @@ class CollaboratorController extends Controller {
             ]
         ]);
     }
+
+    public function addCollaborator() {
+        $this->render('formCollaborator');
+    }
     
     public function searchCollaborator() {
         $this->render('access', [

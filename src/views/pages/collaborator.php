@@ -7,7 +7,7 @@
 
             <?= $render("search", ["title" => "Pesquisar Colaborador", "url" => "collaborator/search/10"]); ?>
 
-            <?= $render("buttonAdd", ["title" => "Cadastrar Colaborador", "url" => "clientAdd"]); ?>
+            <?= $render("buttonAdd", ["title" => "Cadastrar Colaborador", "url" => "collaborator/add"]); ?>
 
             <?= $render("personList", ["infoPerson" => $infoPerson]); ?>
         </div>

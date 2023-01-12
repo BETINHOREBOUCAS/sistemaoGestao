@@ -6,9 +6,9 @@
         <div class="section">
             <div class="line-product">
 
-                <?= $render("search"); ?>
+                <?= $render("search", ["title" => "Pesquisar matéria prima", "url" => "feedstock/search/10"]); ?>
 
-                <?= $render("buttonAddAjax"); ?>
+                <?= $render("buttonAdd", ["title" => "Cadastrar matéria prima", "url" => "clientAdd"]); ?>
 
                 <div class="product">
 

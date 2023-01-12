@@ -29,7 +29,7 @@ class ClientController extends Controller {
     }
 
     public function clientAdd() {
-        $this->render('clientForm');
+        $this->render('formClient');
     }
 
     public function searchClient() {
